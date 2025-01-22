@@ -13,7 +13,11 @@ SECRET_KEY = config('DJANGO_SECRET_KEY', default='fallback-secret-key')  # Use c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = ['newportfolio-enbf.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'portfolio-backend-o70q.onrender.com', 
+    'localhost', 
+    '127.0.0.1'
+]
 
 # Application definition
 INSTALLED_APPS = [
